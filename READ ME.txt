@@ -1,0 +1,52 @@
+<<<<<<<<<<<<<<<<< READ ME >>>>>>>>>>>>>>>>>>
+
+1)) Pre-requisites
+------------------
+Software used-
+Python 3.6 or higher
+Python Modules (boto, datetime, dateutil)
+
+2)) Configuration
+-----------------
+Before running scripts, configure all details with 'aws configure' command. For example-
+
+$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+Default region name [None]: us-east-1
+Default output format [None]: json 
+
+Otherwise 
+
+You can set these details in ~/.aws directory. If directory is not there, create it.
+And create two files in ~/.aws directory
+
+i) ~/.aws/credentials
+ii) ~/.aws/config
+
+There contents should be like this-
+
+~/.aws/credentials
+
+[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+~/.aws/config
+
+[default]
+region=us-west-2
+output=json
+
+3)) Execution
+-------------
+
+Before executing set execution permission to script file
+e.g. chmod +x script.py
+
+Then execute it
+e.g. python script.py
+
+
+
+Thank you
